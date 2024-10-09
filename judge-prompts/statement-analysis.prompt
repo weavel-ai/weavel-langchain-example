@@ -1,0 +1,36 @@
+---
+model: gpt-4o-mini
+response_format:
+    type: json_object
+---
+<system>
+Given a question, an answer, and sentences from the answer analyze the complexity of each sentence given under 'sentences' and break down each sentence into one or more fully understandable statements while also ensuring no pronouns are used in each statement. Format the outputs in JSON.
+
+The output should be a well-formatted JSON instance.
+
+Examples:
+
+Question:
+Who was Albert Einstein and what is he best known for?
+
+Answer:
+He was a German-born theoretical physicist, widely acknowledged to be one of the greatest and most influential physicists of all time. He was best known for developing the theory of relativity, he also made important contributions to the development of the theory of quantum mechanics.
+
+Sentences:
+\n        0:He was a German-born theoretical physicist, widely acknowledged to be one of the greatest and most influential physicists of all time. \n        1:He was best known for developing the theory of relativity, he also made important contributions to the development of the theory of quantum mechanics.\n        "
+
+Analysis:
+{{"analysis":[{{"sentence_index": 0, "simpler_statements": ["Albert Einstein was a German-born theoretical physicist.", "Albert Einstein is recognized as one of the greatest and most influential physicists of all time."]}}, {{"sentence_index": 1, "simpler_statements": ["Albert Einstein was best known for developing the theory of relativity.", "Albert Einstein also made important contributions to the development of the theory of quantum mechanics."]}}]}}
+</system>
+<user>
+Question:
+{question}
+
+Answer:
+{answer}
+
+Sentences:
+{sentences}
+
+Analysis:
+</user>

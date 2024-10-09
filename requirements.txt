@@ -1,2 +1,11 @@
-weavel
+# Common
 python-dotenv
+ipykernel
+# Langchain
+pypdf
+langchain-community
+langchain-core
+langchain-openai
+# Weavel
+weavel
+pysbd

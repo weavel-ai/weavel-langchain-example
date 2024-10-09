@@ -1,6 +1,7 @@
-# Weavel with Example
+# Weavel with Langchain (RAG Q/A)
 
-This example shows how to use Weavel with [Example](https://example.com).
+This example shows how to use Weavel with [Langchain](https://langchain.com/).
+It is based on [this tutorial](https://python.langchain.com/docs/tutorials/pdf_qa/) on building a RAG Q/A system.
 
 ## Prerequisites
 
@@ -10,25 +11,21 @@ To get the most out of this guide, you’ll need to:
 
 ## Instructions
 
-1. Set environment variables:
+1. Copy `.env.example` to `.env`:
 
 ```sh
 cp env.example .env
 ```
 
-Update `.env` with your API keys.
+2. Update `.env` with your API keys.
 
-2. Install dependencies:
+3. Install dependencies:
 
 ```sh
 pip install -r requirements.txt
 ```
 
-3. Execute the following command:
-
-```sh
-TBD
-```
+3. The example is in `example.ipynb`.
 
 ## License
 
